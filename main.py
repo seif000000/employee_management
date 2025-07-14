@@ -39,6 +39,7 @@ def main():
             job_title = job_title if job_title else None
             department = department if department else None
             salary = float(salary_input) if salary_input else None
+            # يعني لو المستخدم كتب حاجه عدلها لو مكتبش اكتب none او متدلش 
 
             service.update_employee(emp_id, name, job_title, department, salary)
             print("Employee updated successfully!")
